@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap");
+//font-family: 'Tajawal', sans-serif;
+$primary-color: #935cae;
+$secondary-color: #333333;
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Tajawal", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+nav {
+  .navbar-default {
+    background: none;
+  }
+  ul {
+    li {
+      margin-left: 10px;
+    }
+    a {
+      text-transform: uppercase;
+    }
+  }
+}
+*/
+
+//-----------Start NavBar-------------------------------------
+
+.navbar {
+  transition: all 0.4s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: $primary-color;
+  transition: ease-in-out 0.4s;
+  text-decoration: none;
+}
+
+/* Change navbar styling on scroll */
+
+//-----------End NavBar-------------------------------------
+
+//-----------Banner-------------------------------------
+.img-contain {
+  background: url(../img/home-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.img-mobile {
+  margin-top: 30%;
+}
+.site-content {
+  background: rgba(13, 14, 15, 0.4);
+  margin: 0;
+  .site-title {
+    font-size: 64px;
+    padding: 20px;
+
+    line-height: 20px;
+    color: #fff;
+    margin-top: 15%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    text-shadow: 0.1rem 0.1rem 0.7rem black;
+  }
+
+  .complete {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0.1rem 0.1rem 0.7rem black;
+    margin-left: 40%;
+    margin-bottom: 5%;
+  }
+  .site-desc {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 5;
+    text-shadow: 0.1rem 0.1rem 0.7rem black;
+    margin-left: 35%;
+    margin-bottom: 5%;
+  }
+  .app-buttons {
+    margin: 0 0 5% 40%;
+
+    a {
+      padding-left: 20px;
+
+      &:hover {
+      }
+    }
+  }
+}
+.typewrite {
+  text-align: center;
+  color: $primary-color;
+}
+.changing-text {
+  text-align: center;
+}
+//===============End Banner-----------------------------
+
+//-------------------About Section----------------------
+
+//Section-1
+
+#card-section {
+  //.heading-1 {
+  // margin-top: 10%;
+  // }
+  background-color: #f5f5f5;
+  .heading-2 {
+    margin-top: 10px;
+    margin-bottom: 2%;
+    font-weight: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  p {
+    font-weight: 70px;
+    margin-bottom: 4%;
+    margin-top: 3%;
+  }
+}
+.card {
+  padding: 0 0 30px 0;
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+    transition: ease-out 0.4s;
+  }
+  .card-header {
+    background-color: $primary-color;
+    color: #fff;
+  }
+  .img-services {
+    max-width: 32%;
+    margin: 20% 0 4% 0;
+    padding: 2%;
+    display: block;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    background-color: $primary-color;
+    margin: 15% 0 7% 37%;
+  }
+  .btn {
+    background-color: #76db6e;
+    color: #fff;
+    margin-bottom: 10%;
+  }
+}
+
+.card-deck {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+.card-deck .card {
+  display: block;
+  flex-basis: 80.3%; /* change this value for each breakpoint*/
+}
+
+#another-price {
+  h1 {
+    margin: 7% 0 2% 0;
+    font-weight: 400;
+  }
+  p {
+    margin-bottom: 5%;
+  }
+  .btn {
+    background-color: #76db6e;
+    color: #fff;
+    margin-bottom: 10%;
+  }
+  a {
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+#how-it-works {
+  background: #f5f5f5;
+  h1 {
+    margin: 0 0 5% 0;
+    padding-top: 40px;
+    font-weight: 400;
+  }
+  h4 {
+    margin-bottom: 5%;
+    font-weight: 50;
+  }
+  img {
+    max-width: 70%;
+    padding-bottom: 15%;
+  }
+}
+
+//-----------Clients Icons-------------
+.section-2 {
+  background: #fffefe;
+  display: block;
+
+  img {
+    max-width: 35%;
+  }
+  .heading-1 {
+    padding-top: 30px;
+    font-weight: 400;
+  }
+  p {
+    padding-bottom: 20px;
+  }
+}
+
+#download-app {
+  color: #fff;
+  background-image: linear-gradient(rgb(87, 24, 81), rgb(57, 38, 161));
+  h1 {
+    padding-top: 7%;
+    margin: 10% 0 6% 0;
+    font-weight: 300;
+    font-size: 50px;
+  }
+  .btn {
+    margin-bottom: 7%;
+  }
+}
+
+#contact-loc {
+  i {
+    margin: 14% 0 5% 0;
+  }
+  p {
+    padding: 25px 0 5% 0;
+  }
+}
+
+//-----------------images gallery----------------------------**
+/* DEMO GENERAL ============================== */
+.Portfolio {
+  h1 {
+    padding: 40px 0 20px 0;
+  }
+  hr {
+    padding-bottom: 70px !important;
+  }
+}
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+//demo-
+.hover-3::after {
+  content: "";
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  border: 1px solid #fff;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 90;
+  transition: all 0.3s;
+  transform: scale(1.1);
+  opacity: 0;
+  display: block;
+  opacity: 0;
+}
+
+.hover-3-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 99;
+}
+
+.hover-3-description {
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+.hover-3 img {
+  width: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-3 .hover-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hover-3:hover img {
+  width: 100%;
+}
+
+.hover-3:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-3:hover .hover-3-description {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-3:hover .hover-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+//------------Connect-----------
+/*.connect {
+  background-image: url(../img/fantasy.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 7%;
+}*/
+
+#contact {
+  padding: 2rem 0;
+}
+/*----------Start Footer Section------------------*/
+
+footer {
+  background-color: #40474e;
+  color: seashell;
+  text-align: center;
+  padding-bottom: 10px;
+  a {
+    color: white;
+
+    &:hover {
+      color: $primary-color;
+      transition: ease-in-out 0.4s;
+    }
+  }
+}
+
+hr.socket {
+  width: 100%;
+  border-top: 0.2rem solid $primary-color;
+  margin-top: 2rem;
+}
+hr.socket h5 {
+  text-align: center;
+}
+/*----------End Footer Section------------------*/
+#atat {
+  padding-top: 6% !important;
+  padding-bottom: 14px;
+}
+#btttttt {
+  background-color: $primary-color;
+}
+
+//--------------Media queries------------------
+@media (max-width: 600px) {
+  .site-content {
+    background: rgba(13, 14, 15, 0.8);
+
+    .site-title {
+      font-size: 35px;
+      padding-bottom: 35px;
+      padding-top: 50px;
+    }
+    .site-desc {
+      font-size: 15px;
+      padding-bottom: 25px;
+    }
+
+    .site-btn1 {
+      position: absolute;
+      top: 80%;
+      right: 35%;
+    }
+  }
+  .typewrite {
+    font-size: 30px;
+  }
+  .changing-text {
+    text-align: center;
+    padding-bottom: 50%;
+  }
+}
