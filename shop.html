@@ -23,6 +23,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!--JavaScrip Main-->
+    <script src="js/main.js"></script>
+
     <title>الموقع - المتجر</title>
   </head>
   <body>
@@ -81,12 +84,12 @@
         
       <form class="needs-validation text-right" novalidate>
        
-          <div class="form-group"">
-            <label for="validationCustom01">الاسم</label>
+          <div class="form-group">
+            <label for="customerName">الاسم</label>
             <input
               type="text"
               class="form-control text-right"
-              id="validationCustom01"
+              id="customerName"
               placeholder="فرد او شركة "
               value=""
               required
@@ -98,8 +101,8 @@
               من فضلك استكمل  البيانات
               </div>
           </div>
-            <label for="validationCustom02">المنتج المطلوب</label>
-            <select class="form-control text-right" id="validationCustom02"
+            <label for="element">المنتج المطلوب</label>
+            <select class="form-control text-right" id="element"
               placeholder="النوع"
               value=""
               required>
@@ -153,11 +156,11 @@
            
           </div>
           <div class="form-group">
-            <label for="validationCustom05">رقم هاتف</label>
+            <label for="mobile">رقم هاتف</label>
             <input
               type="text"
               class="form-control text-right"
-              id="validationCustom05"
+              id="mobile"
               placeholder="Mobile Number"
               required
             />
@@ -183,11 +186,11 @@
             </div>
           </div>
         
-        <button class="btn btn-primary mt-4 py-3" type="submit">استكمل  الطلب</button>
+        <button class="btn btn-primary mt-4 py-3" type="submit" onclick="submitData()">استكمل  الطلب</button>
       </form>
       
     </main>
-    <script>
+ <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function () {
         "use strict";
@@ -219,7 +222,7 @@
           
         );
       })();
-    </script>
+    </script> 
 
     <!--***********************************Form Section*******************************************************-->
 
@@ -234,8 +237,7 @@
       <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
     </footer>
 
-    <!--JavaScrip Main-->
-    <script src="js/main.js"></script>
+    
 
     <!--BootStrap 4 JavaScrip-->
     <script
@@ -253,5 +255,36 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<!-- Connect to database -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+<script>
+  // Initialize Cloud Firestore through Firebase
+firebase.initializeApp({
+  apiKey: 'AIzaSyD71TirSoLtyo7cDIQ5VfhKx2-4yG8SIlo'
+,
+  authDomain: 'https://almawkaa-clone.firebaseapp.com/',
+  projectId: 'almawkaa-clone'
+});
+
+var db = firebase.firestore();
+
+</script>
+
+<script src="js/index.js"></script>
+
+
   </body>
 </html>
