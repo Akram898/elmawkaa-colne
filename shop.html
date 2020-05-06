@@ -24,7 +24,9 @@
     ></script>
 
     <!--JavaScrip Main-->
-    <script src="js/main.js"></script>
+
+    
+
 
     <title>الموقع - المتجر</title>
   </head>
@@ -186,10 +188,11 @@
             </div>
           </div>
         
-        <button class="btn btn-primary mt-4 py-3" type="submit" onclick="submitData()">استكمل  الطلب</button>
+        <button class="btn btn-primary mt-4 py-3" type="submit" id="order-btn">استكمل  الطلب</button>
       </form>
       
     </main>
+  
  <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function () {
@@ -257,33 +260,37 @@
     ></script>
 
 
+
+
+
+
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
-
-<!-- Connect to database -->
-<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
-
 <script>
-  // Initialize Cloud Firestore through Firebase
-firebase.initializeApp({
-  apiKey: 'AIzaSyD71TirSoLtyo7cDIQ5VfhKx2-4yG8SIlo'
-,
-  authDomain: 'https://almawkaa-clone.firebaseapp.com/',
-  projectId: 'almawkaa-clone'
-});
-
-var db = firebase.firestore();
-
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD71TirSoLtyo7cDIQ5VfhKx2-4yG8SIlo",
+    authDomain: "almawkaa-clone.firebaseapp.com",
+    databaseURL: "https://almawkaa-clone.firebaseio.com",
+    projectId: "almawkaa-clone",
+    storageBucket: "almawkaa-clone.appspot.com",
+    messagingSenderId: "574372635564",
+    appId: "1:574372635564:web:5956c2260f420854729009"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 </script>
 
-<script src="js/index.js"></script>
+
+    <script src="js/index.js"></script>
 
 
   </body>
