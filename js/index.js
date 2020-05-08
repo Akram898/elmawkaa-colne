@@ -8,13 +8,22 @@ const database = firebase.database();
 const rootRef = database.ref("orders");
 
 orderBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  const autoID = rootRef.push().key;
-  rootRef.child(autoID).set({
-    customer_name: name.value,
-    Element_type: element.value,
-    mobile_number: mobile.value,
-  });
+  if (name.value != "" && element.value != "" && mobile.value != "") {
+    e.preventDefault();
+    const autoID = rootRef.push().key;
+    rootRef.child(autoID).set({
+      customer_name: name.value,
+      Element_type: element.value,
+      mobile_number: mobile.value,
+    });
+    // rootRef.child.on("child_added", (snapshot) => {
+    //   alert("Ref Number : " + snapshot.autoID.val());
+    // });
+    location.reload();
+    alert("شكرا, تم استلام طلبك سنتواصل معك قريبا");
+  } else {
+    alert("من فضلك استكمل البيانات");
+  }
 });
 
 // (function () {
