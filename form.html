@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Css Coming From Sass-->
+
+    <link rel="stylesheet/scss" type="text/css" href="sass/style.scss" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" href="img/logo - Copy - Copy.png" />
+
+    <!--BootStrap 4 Css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/d44b24acad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+ <script src="js/form.js"></script>
+
+    <title>الموقع - شراء مواد بناء</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-md fixed-top py-3">
+        <div class="container">
+          <a href="#" class="navbar-brand text-uppercase font-weight-bold"
+            ><img src="img/logo.png" style="max-width: 180px;" alt=""
+          /></a>
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler navbar-toggler-right"
+          >
+            <i class="fa fa-bars" style="color: white;"></i>
+          </button>
+
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+                <a
+                  href="/showdata.html"
+                  target="_blank"
+                  class="btn btn-success my-2 my-sm-0 mr-2"
+                  id="showdata"
+                  >الطلبات</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/shop.html"
+                  target="_blank"
+                  class="btn btn-info my-2 my-sm-0"
+                  type="submit"
+                >
+                  ادخل المتجر كزائر
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/form.html"
+                  target="_blank"
+                  class="btn btn-success my-2 my-sm-0 mx-3"
+                  type="submit"
+                >
+                  انشاء حساب
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/form.html"
+                  target="_blank"
+                  class="btn btn-primary my-2 my-sm-0 mr-4"
+                  type="submit"
+                >
+                  تسجيل دخول
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-uppercase">سجل كمورد</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-uppercase">حمل التطبيق</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/shop.html"
+                  target="_blank"
+                  class="nav-link text-uppercase"
+                  >المتجر</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a href="#" class="nav-link text-uppercase"
+                  >الرئيسية <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  
+<form  style="margin: 20%;">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+  
+    <input type="password" class="form-control" id="password" placeholder="Password">
+      <small id="password-validation" class="form-text text-muted">Password must be 6 characters or more</small>
+  </div>
+  
+  <button type="submit" class="btn btn-primary" onclick="signUp()" id="signup-btn">Sign-Up</button>
+  <button type="submit" class="btn btn-secondary" onclick="signIn()" id="signin-btn">Sign In</button>
+  <button type="submit" class="btn btn-action hide" id="logout">Log Out</button>
+</form>
+
+
+
+    
+
+      <!--***********************************End Portfolio Section*******************************************************-->
+
+      <footer>
+        <hr class="socket" />
+
+        <h5>&copy; Ahmed Akram 2020.</h5>
+        <a href="https://github.com/Akram898" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      </footer>
+    </main>
+
+   
+
+    <!--BootStrap 4 JavaScrip-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+     
+     
+    </script>
+   
+
+  </body>
+</html>

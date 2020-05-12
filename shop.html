@@ -52,8 +52,44 @@
 
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+                <a
+                  href="/showdata.html"
+                  target="_blank"
+                  class="btn btn-success my-2 my-sm-0 mr-2"
+                  id="showdata"
+                  >الطلبات</a
+                >
+              </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-uppercase">أفضل العروض</a>
+                <a
+                  href="/shop.html"
+                  target="_blank"
+                  class="btn btn-info my-2 my-sm-0"
+                  type="submit"
+                >
+                  ادخل المتجر كزائر
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/form.html"
+                  target="_blank"
+                  class="btn btn-success my-2 my-sm-0 mx-3"
+                  type="submit"
+                >
+                  انشاء حساب
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/form.html"
+                  target="_blank"
+                  class="btn btn-primary my-2 my-sm-0 mr-4"
+                  type="submit"
+                >
+                  تسجيل دخول
+                </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link text-uppercase">سجل كمورد</a>
@@ -70,7 +106,7 @@
                 >
               </li>
               <li class="nav-item active">
-                <a href="/index.html" target="_blank" class="nav-link text-uppercase"
+                <a href="#" class="nav-link text-uppercase"
                   >الرئيسية <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -188,12 +224,15 @@
             </div>
           </div>
         
+          <a href="/showdata.html" target="_blank" class="btn btn-success mt-4 py-3 mr-4"  id="showdata">الطلبات</a>
+
         <button class="btn btn-primary mt-4 py-3" type="submit" id="order-btn">استكمل  الطلب</button>
+        
       </form>
       
     </main>
   
- <script>
+ <!-- <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function () {
         "use strict";
@@ -225,7 +264,39 @@
           
         );
       })();
-    </script> 
+    </script>  -->
+
+    <!--***********************************Form Section*******************************************************-->
+
+    
+    <!--***********************************Form Section*******************************************************-->
+
+<form id="get-data">
+  <h1 class="text-center">Track Order تتبع الطلب</h1>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Order ID     رقم الطلب</label>
+    <input type="email" class="form-control" id="order-id" aria-describedby="emailHelp" placeholder="Order ID Number">
+    <button class="btn btn-success search-btn " type="submit">Search بحث</button>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Name    الاسم</label>
+   <input class="form-control" type="text" id="get-name"  readonly>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Element     النوع</label>
+   <input class="form-control" type="text" id="get-element"   readonly>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Mobile     الرقم</label>
+   <input class="form-control" type="text"  id="get-mob"  readonly>
+  </div>
+  
+
+</form>
+
+
 
     <!--***********************************Form Section*******************************************************-->
 
@@ -274,6 +345,11 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -283,11 +359,15 @@
     projectId: "almawkaa-clone",
     storageBucket: "almawkaa-clone.appspot.com",
     messagingSenderId: "574372635564",
-    appId: "1:574372635564:web:5956c2260f420854729009"
+    appId: "1:574372635564:web:5956c2260f420854729009",
+    measurementId: "G-80VYTB63R0"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 </script>
+
+
 
 
     <script src="js/index.js"></script>

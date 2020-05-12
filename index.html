@@ -47,7 +47,43 @@
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a href="#" class="nav-link text-uppercase">أفضل العروض</a>
+                <a
+                  href="/showdata.html"
+                  target="_blank"
+                  class="btn btn-success my-2 my-sm-0 mr-2"
+                  id="showdata"
+                  >الطلبات</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/shop.html"
+                  target="_blank"
+                  class="btn btn-info my-2 my-sm-0"
+                  type="submit"
+                >
+                  ادخل المتجر كزائر
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/form.html"
+                  target="_blank"
+                  class="btn btn-success my-2 my-sm-0 mx-3"
+                  type="submit"
+                >
+                  انشاء حساب
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/form.html"
+                  target="_blank"
+                  class="btn btn-primary my-2 my-sm-0 mr-4"
+                  type="submit"
+                >
+                  تسجيل دخول
+                </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link text-uppercase">سجل كمورد</a>
@@ -437,5 +473,29 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD71TirSoLtyo7cDIQ5VfhKx2-4yG8SIlo",
+        authDomain: "almawkaa-clone.firebaseapp.com",
+        databaseURL: "https://almawkaa-clone.firebaseio.com",
+        projectId: "almawkaa-clone",
+        storageBucket: "almawkaa-clone.appspot.com",
+        messagingSenderId: "574372635564",
+        appId: "1:574372635564:web:5956c2260f420854729009",
+        measurementId: "G-80VYTB63R0",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
